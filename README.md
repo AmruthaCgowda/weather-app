@@ -3,8 +3,7 @@
 A simple and responsive weather application built using HTML, Tailwind CSS, and JavaScript.
 
 ## 🔗 Live Demo  
-<a href="https://amruthacgowda.github.io/weather-app" target="_blank">Weather App</a>  
-*(Replace with your actual deployment link!)*
+<a href="https://amruthacgowda.github.io/weather-app" target="_blank">Weather App</a>
 
 ## 🛠️ Technologies Used
 
