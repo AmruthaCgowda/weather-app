@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center">
+    <div class="bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-2xl">
+      <div class="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md text-center text-white">
+        <h1 class="text-3xl font-bold mb-6">Check the Weather!</h1>
+
+        <form class="flex gap-4 mb-6" id="searchForm">
+          <input
+            type="text"
+            placeholder="Enter city name"
+            spellcheck="false"
+            class="flex-1 p-4 rounded-full text-gray-700 focus:outline-none"
+            id="cityInput"
+          />
+          <button
+            type="submit"
+            class="bg-white text-cyan-600 p-4 rounded-full hover:bg-cyan-100 transition"
+          >
+            🔍
+          </button>
+        </form>
+
+        <div id="error" class="text-red-200 text-sm mb-4 hidden">
+          Invalid city name! Please try again.
+        </div>
+
+        <div id="weather" class="hidden">
+          <img id="weatherIcon" src="" alt="Weather Icon" class="w-32 mx-auto mb-6" />
+
+          <h2 class="text-6xl font-bold mb-2" id="temp">22°C</h2>
+          <h3 class="text-3xl font-semibold mb-6" id="city">City</h3>
+
+          <div class="flex justify-around text-left">
+            <div class="flex items-center gap-2">
+              <img src="./images/humidity.png" alt="Humidity" class="w-8" />
+              <div>
+                <p id="humidity" class="text-xl">50%</p>
+                <p class="text-xs">Humidity</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./images/wind.png" alt="Wind" class="w-8" />
+              <div>
+                <p id="wind" class="text-xl">15 km/h</p>
+                <p class="text-xs">Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
